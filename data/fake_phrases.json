@@ -1,0 +1,26 @@
+{
+  "scam_phrases": [
+    "guaranteed job offer",
+    "payment for certificate",
+    "congratulations you are selected without interview",
+    "instant certification",
+    "no interview required",
+    "pay processing fee",
+    "100% placement guarantee",
+    "buy internship certificate"
+  ],
+  "canva_indicators": [
+    "designed with canva",
+    "canva logo",
+    "template by",
+    "edit this text"
+  ],
+  "generic_phrases": [
+    "this is to certify that",
+    "has successfully completed",
+    "is a hardworking student",
+    "we wish him all the best",
+    "for the period of",
+    "duration of internship"
+  ]
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Results | AI Certificate Verifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Verification Result</h1>
+            <p>Analysis complete. Here is the authenticity confidence assessment.</p>
+        </div>
+
+        <div class="card">
+            <div style="text-align: center;">
+                <span class="badge badge-{{ result.color }}">{{ result.status }}</span>
+            </div>
+            
+            <div class="result-score" style="color: var(--{{ result.color }});">
+                {{ result.score }}%
+            </div>
+
+            <h3>Analysis Reasoning:</h3>
+            <ul class="reasons-list">
+                {% for reason in result.reasons %}
+                <li>{{ reason }}</li>
+                {% endfor %}
+            </ul>
+
+            <div style="margin-top: 40px; text-align: center;">
+                <a href="/" class="btn" style="text-decoration: none; display: inline-block; width: auto; padding: 12px 24px;">Verify Another</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            Disclaimer: This tool provides confidence scores based on pattern analysis. It is not an absolute judgment of authenticity.
+        </div>
+    </div>
+</body>
+</html>
